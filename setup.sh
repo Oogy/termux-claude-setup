@@ -22,16 +22,16 @@ echo "[1/8] Updating package lists..."
 pkg update -y
 
 # Install dependencies
-echo "[2/8] Installing nodejs, golang, git, ripgrep, gh..."
-pkg install -y nodejs golang git ripgrep gh
+echo "[2/8] Installing nodejs, git, ripgrep, gh..."
+pkg install -y nodejs git ripgrep gh
 
 # Install Claude Code
 echo "[3/8] Installing Claude Code via npm..."
 npm install -g @anthropic-ai/claude-code
 
 # Install OpenCode
-echo "[4/8] Installing OpenCode via go..."
-go install github.com/sst/opencode@latest
+echo "[4/8] Installing OpenCode via npm..."
+npm install -g opencode-ai@latest
 
 # Install Codex CLI
 echo "[5/8] Installing Codex CLI via npm..."
@@ -65,7 +65,6 @@ echo ""
 echo "Installed versions:"
 echo "  Node.js: $(node --version)"
 echo "  npm: $(npm --version)"
-echo "  Go: $(go version | cut -d' ' -f3)"
 echo "  git: $(git --version | cut -d' ' -f3)"
 echo "  ripgrep: $(rg --version | head -1 | cut -d' ' -f2)"
 echo "  gh: $(gh --version | head -1 | cut -d' ' -f3)"

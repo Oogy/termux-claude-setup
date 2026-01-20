@@ -1,28 +1,33 @@
-# termux-claude-setup
+# termux-agent
 
-One-command setup for Claude Code on Termux (Android).
+One-command setup for AI coding agents on Termux (Android).
 
 ## Quick Install
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Oogy/termux-claude-setup/main/setup.sh | bash
+curl -fsSL https://raw.githubusercontent.com/Oogy/termux-agent/main/setup.sh | bash
 ```
 
 Or clone and run:
 
 ```bash
-git clone https://github.com/Oogy/termux-claude-setup.git
-cd termux-claude-setup
+git clone https://github.com/Oogy/termux-agent.git
+cd termux-agent
 ./setup.sh
 ```
 
 ## What it installs
 
-- **Node.js** - Required for Claude Code
+- **Node.js** - Required for Claude Code, OpenCode, and Codex CLI
 - **git** - Version control
-- **ripgrep** - Fast search (used by Claude Code)
+- **ripgrep** - Fast search (used by AI agents)
 - **gh** - GitHub CLI
+
+### AI Coding Agents
+
 - **Claude Code** - Anthropic's agentic coding tool
+- **OpenCode** - SST's terminal-based AI coding assistant
+- **Codex CLI** - OpenAI's command-line coding agent
 
 ## Extras
 
@@ -33,7 +38,9 @@ cd termux-claude-setup
 
 1. Authenticate with GitHub: `gh auth login`
 2. Start Claude Code: `claude`
-3. Install [Termux:Widget](https://f-droid.org/packages/com.termux.widget/) and add shortcuts to your home screen
+3. Start OpenCode: `opencode`
+4. Start Codex CLI: `codex`
+5. Install [Termux:Widget](https://f-droid.org/packages/com.termux.widget/) and add shortcuts to your home screen
 
 ## Requirements
 
